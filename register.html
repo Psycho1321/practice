@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+</head>
+<body>
+    <h1>Ргеистрация</h1>
+    <form action="register.php" method="post">
+        <p>
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" minlength="8" required>
+        </p>
+        <p>
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+        </p>
+        <p>
+        <label for="genre">Любимый жанр</label>
+        <select id="genre" name="genre">
+            <option value="classic">Классика</option>
+            <option value="sf">Фантастика</option>
+            <option value="detective">Детектив</option>
+        </select>
+        </p>
+        <p>
+            <label><input type="checkbox" name="agree" value="1" required>Согласие с правилами магазина</label>
+        </p>
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</body>
+</html>
