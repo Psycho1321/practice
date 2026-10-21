@@ -32,7 +32,7 @@ body {
 }
 
 .top .exit {
-  color: #ffb4a8;
+  color: #ffffff;
 }
 
 #list {
@@ -60,7 +60,7 @@ body {
 }
 
 .card-title {
-  margin: 0 0 8px;
+  margin: 0 0 18px;
   font-size: Arial;
 }
 
@@ -70,7 +70,7 @@ body {
 }
 
 #list .deadline {
-  color: #1f3a93;
+  color: #c0392b;
 }
 
 .badge {
@@ -79,13 +79,10 @@ body {
   border-radius: 10px;
   background: var(--accent);
   color: #ffffff;
-  colour: #ffffff;
   font-size: 12px;
 }
 
-.note {
-  display: none;
-}
+
 
 .btn {
   padding: 8px 16px;
