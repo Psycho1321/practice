@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Регистрация</title>
 </head>
 <body>
     <header>
+        <a href="index.html">Книжная лавка</a>
         <nav>
             <ul>
             <li><a href="index.html">Главная</a></li>
-            <li><a href="prices.html">Цены</a></li>
+            <li><a href="prices.html">Прайс-лист</a></li>
             <li><a href="about.html">О магазине</a></li>
             <li><a href="register.html">Регистрация</a></li>
             </ul>
         </nav>
     </header>
-    <h1>Ргеистрация</h1>
+    <h1>Регистрация</h1>
     <form action="register.php" method="post">
         <p>
             <label for="name">Имя</label>
@@ -32,6 +33,7 @@
         <p>
         <label for="genre">Любимый жанр</label>
         <select id="genre" name="genre">
+            <option value="hint">— выберите жанр —</option>
             <option value="classic">Классика</option>
             <option value="sf">Фантастика</option>
             <option value="detective">Детектив</option>
