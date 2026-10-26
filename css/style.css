@@ -72,5 +72,15 @@ button {
 }
 
 button:hover {
-    background: #22339b;             /* при наведении — фон темнее */
+    background: #22339b;
+}
+@media (max-width: 600px){
+    header {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    nav ul {
+        flex-wrap: wrap;
+    }
+
 }
