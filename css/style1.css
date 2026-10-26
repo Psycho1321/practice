@@ -1,0 +1,43 @@
+/*Основа — ветка*/
+:root {
+    --accent: #2f45c8;   /* основной цвет: ссылки, кнопки, текущий пункт меню */
+    --text: #222222;     /* цвет текста */
+    --bg: #ffffff;       /* фон страницы */
+    --line: #dddddd;     /* рамки */
+    --stripe: #f3f5fb;   /* фон чётных строк таблицы */
+    --space: 16px;       /* базовый отступ */
+
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space);
+    border-bottom: 1px solid var(--line);
+
+}
+.active{
+        var(--accent);
+}
+main{
+    max-width:960px;
+    margin:0;
+    padding: 0 var(--space);
+}
+img{
+    max-width:100%;
+    heightl:auto;
+}
+/*Прайс-лист — ветка*/
+table { border-collapse: collapse; }         /* одна общая рамка между ячейками, а не две */
+td, th { border: 1px solid var(--line); padding: 8px 12px; }
+tbody tr:nth-child(even) { background: var(--stripe); }   /* каждая вторая строка */
+
+label { display: block; }                     /* подпись — отдельной строкой над полем */
+input, select { width: 100%; }
