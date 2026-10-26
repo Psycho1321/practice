@@ -40,3 +40,37 @@ tbody tr:nth-child(even) { background: var(--stripe); }   /* каждая вто
 
 label { display: block; }                     /* подпись — отдельной строкой над полем */
 input, select { width: 100%; }
+
+form{
+    max-width:400px;
+}
+label {
+    display: block;                  /* подпись — отдельной строкой над полем */
+}
+form p{
+    margin: 0 0 var(--space);
+}
+input, select {
+    width: 100%;                     /* поля и список жанров — во всю ширину формы */
+}
+input[type="checkbox"] {
+    width: auto;                     /* чекбокс не растягиваем (исключение) */
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border: 2px solid var(--accent); /* рамка у поля в фокусе */
+}
+
+button {
+    background: var(--accent);       /* кнопка — фон акцентного цвета */
+    color: #ffffff;                  /* белый текст */
+    border: none;                    /* без рамки */
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #22339b;             /* при наведении — фон темнее */
+}
